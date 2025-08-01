@@ -38,6 +38,8 @@ public class Console {
         System.out.println("(2) subtraction");
         System.out.println("(3) multiplication");
         System.out.println("(4) division");
+        System.out.println("(5) power");
+        System.out.println("(6) square root");
         System.out.println("(q) quit");
     }
 
@@ -57,8 +59,8 @@ public class Console {
     }
 
     private void evaluateBufferForOptionsMenu1(String buffer) {
-        int val1;
-        int val2;
+        double val1;
+        double val2;
         switch(buffer) {
             case "1":
                 val1 = getValidNumberFromUser("Enter your first number: ");
@@ -91,6 +93,17 @@ public class Console {
 
                 System.out.println(val1 + " / " + val2 + " = " + Calculator.divide( val1,val2).value());
                 break;
+            case "5":
+                val1 = getValidNumberFromUser("Enter your base number: ");
+                val2 = getValidNumberFromUser("Enter your number to the power of: ");
+
+                System.out.println(val1 + " to the power of " + val2 + " = " + Calculator.power(val1, val2).value());
+                break;
+            case "6":
+                val1 = getValidNumberFromUser("Enter your number: ");
+
+                System.out.println("Square root of " + val1 + " = " + Calculator.squareRoot(val1).value());
+                break;
             case "q":
                 System.out.println("quit");
                 setLoopConsole(false);
@@ -110,7 +123,7 @@ public class Console {
         return true;
     }
 
-    private int getValidNumberFromUser(String inputMessage) {
+    private double getValidNumberFromUser(String inputMessage) {
         System.out.println(inputMessage);
         System.out.print("\n>>> ");
         String buffer = scanner.nextLine();
