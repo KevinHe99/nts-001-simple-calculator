@@ -57,8 +57,8 @@ public class Console {
     }
 
     private void evaluateBufferForOptionsMenu1(String buffer) {
-        double val1;
-        double val2;
+        int val1;
+        int val2;
         switch(buffer) {
             case "1":
                 val1 = getValidNumberFromUser("Enter your first number: ");
@@ -103,14 +103,14 @@ public class Console {
 
     private boolean isValidNumber(String number) {
         try {
-            Double.parseDouble(number);
+            Integer.parseInt(number);
         }catch (NumberFormatException e) {
             return false;
         }
         return true;
     }
 
-    private double getValidNumberFromUser(String inputMessage) {
+    private int getValidNumberFromUser(String inputMessage) {
         System.out.println(inputMessage);
         System.out.print("\n>>> ");
         String buffer = scanner.nextLine();
@@ -124,6 +124,6 @@ public class Console {
             buffer = scanner.nextLine();
         }
 
-        return Double.parseDouble(buffer);
+        return Integer.parseInt(buffer);
     }
 }
