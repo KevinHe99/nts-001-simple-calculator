@@ -6,7 +6,25 @@
 
     <groupId>com.kevinhe99</groupId>
     <artifactId>nts-001-simple-calculator</artifactId>
-    <version>0.1.250731a-SNAPSHOT</version>
+    <version>0.1.250802a-SNAPSHOT</version>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>com.kevinhe99.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <properties>
         <maven.compiler.source>24</maven.compiler.source>

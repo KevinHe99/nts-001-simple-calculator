@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Console {
     public static final String APP_NAME = "Simple Calculator";
-    public static final String VERSION = "0.1.250731a";
+    public static final String VERSION = "0.1.250802a";
 
     private final Scanner scanner;
     private final PrintStream output;

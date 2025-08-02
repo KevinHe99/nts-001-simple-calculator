@@ -5,13 +5,42 @@ Part of a NEET to SWE program by [me](https://github.com/kevinhe99).
 
 A terminal-based calculator to allow users to do math in their terminal.
 
-    Concepts Taught: Basic arithmetic operations, if-else or switch statements, user input (Scanner), basic methods.
+## Features
+* Can perform basic arithmetics (add, subtract, multiply, divide) between two numbers
+* Support for floating-point (decimal) numbers 
+* Support for advanced operations (eg. power/exponents, square root)
 
-    Enhancements: Support for floating-point numbers, more operations (power, square root), error handling (division by zero), command-line arguments.
+## Technologies Used
+* **Language:** Java 24
+* **Build Tool:** Maven 4.0.0
+* **Testing:** JUnit 5
 
-    Ways to Succeed: Break down operations into separate methods.
+## Prerequisites
+* Java Development Kit (JDK) 24 or higher
+* Maven 4.x
+* (Optional) An IDE like IntelliJ IDEA or Eclipse
 
-    Architectural Guidance: Single class, focus on clear method design.
+### Setup Steps
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/KevinHe99/nts-001-simple-calculator.git
+    cd nts-001-simple-calculator
+    ```
+    
+2. **Build the Project:**
+    ```bash
+    mvn clean install
+    ```
+
+3.  **Run the Application:**
+    ```bash
+    java -jar target/nts-001-simple-calculator-0.1.250802a-SNAPSHOT.jar
+    ```
+    
+## Future Enhancements
+* Support for more advanced operations (eg. sine, cosine, tangent)
+* Support for unit conversions (metre -> feet, feet -> yard)
 
 ## License
 
