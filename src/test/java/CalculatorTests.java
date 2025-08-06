@@ -46,7 +46,7 @@ class CalculatorTests {
     @Test
     @DisplayName("Divide [1/3]")
     void TestDivide1() {
-        assertEquals((double) 55 /3, Calculator.divide(55,3).value());
+        assertEquals(55.7 /3, Calculator.divide(55.7,3).value());
     }
 
     @Test

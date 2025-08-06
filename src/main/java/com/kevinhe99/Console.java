@@ -116,7 +116,7 @@ public class Console {
 
     private boolean isValidNumber(String number) {
         try {
-            Integer.parseInt(number);
+            Double.parseDouble(number);
         }catch (NumberFormatException e) {
             return false;
         }
@@ -137,6 +137,6 @@ public class Console {
             buffer = scanner.nextLine();
         }
 
-        return Integer.parseInt(buffer);
+        return Double.parseDouble(buffer);
     }
 }
