@@ -13,14 +13,13 @@ A terminal-based calculator to allow users to do math in their terminal.
 
 ## 🛠️ Technologies Used
 * **Language:** Java 24
-* **Build Tool:** Maven 4.0.0
+* **Build Tool:** Maven 3.9.11
 * **Testing:** JUnit 5
 
 ## ⚙️ How to Run Locally
 
 ### Prerequisites
 * Java Development Kit (JDK) 24 or higher
-* Maven 4.x
 * (Optional) An IDE like IntelliJ IDEA or Eclipse
 
 ### Setup Steps
@@ -33,12 +32,12 @@ A terminal-based calculator to allow users to do math in their terminal.
     
 2. **Build the Project:**
     ```bash
-    mvn clean install
+    mvnw clean install
     ```
 
 3.  **Run the Application:**
     ```bash
-    java -jar target/nts-001-simple-calculator-0.1.250802a-SNAPSHOT.jar
+    java -jar target/nts-001-simple-calculator-1.0-SNAPSHOT.jar
     ```
 
 ## 📈 Future Enhancements
